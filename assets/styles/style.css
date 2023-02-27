@@ -18,3 +18,112 @@ iframe {
 	margin: 50px auto;
 	display: block;
 }
+body {
+	padding-top: 100px;
+}
+header {
+	background-color: blue;
+	padding: 30px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.navbar,
+.navbar ul,
+.navbar-li {
+	display: inline-block;
+}
+.navbar-li a {
+	color: white;
+}
+.sticky {
+	height: 50px;
+	background-color: red;
+	position: sticky;
+	top: 80px;
+	left: 0;
+	z-index: 1;
+}
+
+.scroll {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	width: 30px;
+	height: 30px;
+	border: 50%;
+	background-color: darkcyan;
+}
+
+.text {
+	position: relative;
+	max-width: 500px;
+	margin: 50px auto;
+}
+.text p {
+	position: absolute;
+	bottom: 0;
+	background-color: blueviolet;
+}
+.text img {
+	width: 100%;
+}
+
+.slide {
+	position: relative;
+}
+
+.slide img {
+	width: 100%;
+}
+
+.slide span {
+	background-color: blue;
+	position: absolute;
+}
+
+.left {
+	left: 30px;
+	top: 50%;
+}
+
+.right {
+	right: 30px;
+	top: 50%;
+}
+
+p::before {
+	content: "🔥🔥";
+}
+p::after {
+	content: "🔥🔥";
+}
+
+.navbar-li::after {
+	content: "";
+	width: 100%;
+	height: 10px;
+	background-color: red;
+	display: block;
+}
+
+/* .navbar-li:last-child {
+	padding: 20px;
+	background-color: cadetblue;
+	border-radius: 20px;
+} */
+
+/* .paragraphs p:nth-of-type(odd) {
+	background-color: chocolate;
+} */
+
+/* .paragraphs p:nth-child(odd) {
+	background-color: chocolate;
+}  */
+
+/* .navbar-li:nth-child(3n) {
+	background-color: chocolate;
+	padding: 30px;
+} */
